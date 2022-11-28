@@ -33,17 +33,49 @@ npm install --save react-use-rapid7
 
 ## Usage
 
----
+- You can just call for useRapid7 hook and expect the following parameters:
+
+| key                      | description        | example                               |
+| ------------------------ | ------------------ | ------------------------------------- |
+| token                    | Rapid7's API key   | 29189s8asa-skajskj1298sas-kjsaksjak92 |
+| rapid7's optional config | Other extra config | { print: true }                       |
 
 ---
 
 ## Examples
 
+```tsx
+const logger = useRapid7('sas1209-cdbb-4afc-b10f-2198sasak', {
+  print: true,
+});
+
+aSimplePromise()
+  .then(() => logger.info('aSimplePromise has been resolved'))
+  .catch((error) =>
+    logger.error(`aSimplePromise has errored with ${error.message}`)
+  );
+```
+
 ---
 
 ## Documentation
 
-`useRapid7()` returns:
+`useRapid7()` returns a logger with the following methods:
+
+```tsx
+type MessageHandler = (
+  message: string | Record<string & number & symbol, string> | Error
+) => void;
+
+type LoggersClientReturn = {
+  warn: MessageHandler;
+  error: MessageHandler;
+  info: MessageHandler;
+  log: MessageHandler;
+};
+```
+
+You can use a simple string or an object for the message.
 
 ---
 
