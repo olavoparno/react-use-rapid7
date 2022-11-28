@@ -1,6 +1,6 @@
 {
   "name": "react-use-rapid7",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds Rapid7 InsightOps hooks to React",
   "author": "Olavo Parno",
   "license": "MIT",

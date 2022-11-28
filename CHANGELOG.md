@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.0.1 (2022-11-28)
+
 ### [1.2.2](https://github.com/olavoparno/react-use-rapid7/compare/v1.2.1...v1.2.2) (2022-11-17)
 
 
