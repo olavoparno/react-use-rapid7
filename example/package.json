@@ -1,0 +1,26 @@
+{
+  "name": "react-use-rapid7-example",
+  "homepage": "https://olavoparno.github.io/react-use-rapid7",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "react": "file:../node_modules/react",
+    "react-dom": "^17.0.2",
+    "react-scripts": "file:../node_modules/react-scripts",
+    "react-use-rapid7": "file:.."
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
