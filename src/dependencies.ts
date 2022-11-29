@@ -46,7 +46,9 @@ export class R7LoggerClient {
 
       this.service = InjectedLogger as LoggerClient;
     } catch (error) {
-      this.service = InjectedLogger as LoggerClient;
+      throw new Error(
+        `Error initializing R7Insight: ${(error as Error).message}`
+      );
     }
   }
 

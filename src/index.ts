@@ -3,7 +3,7 @@ import R7Insight from 'r7insight_js';
 import { LoggersClientReturn } from './types';
 import { R7LoggerClient } from './dependencies';
 
-function useRapid7Factory<T>(
+export function useRapid7Factory<T>(
   InjectedLogger: T,
   token: string,
   rapid7Options?: object
@@ -11,6 +11,8 @@ function useRapid7Factory<T>(
   const logger = useMemo(() => {
     return R7LoggerClient.getInstance(InjectedLogger, token, rapid7Options);
   }, [InjectedLogger, token, rapid7Options]);
+
+  console.log('logger', logger);
 
   return logger;
 }
